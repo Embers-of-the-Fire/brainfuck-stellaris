@@ -391,7 +391,7 @@ planet_event = {
 
 # Set the node to zero
 planet_event = {
-    id = bfvm.12
+    id = bfvm.13
 
     hide_window = yes
     is_triggered_only = yes
@@ -401,6 +401,76 @@ planet_event = {
             set_variable = {
                 which = bf_ll_value
                 value = 0
+            }
+        }
+    }
+}
+
+# Move the memory cursor right, extending the tape at its tail
+planet_event = {
+    id = bfvm.14
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            if = {
+                limit = {
+                    is_same_value = event_target:bf_vm_memory_tail
+                }
+
+                linked_list_extend_after = {
+                    NODE = bf_vm_memory_cursor
+                    NULL = bf_vm_null
+                }
+
+                event_target:bf_vm_memory_cursor = {
+                    save_global_event_target_as = bf_vm_memory_tail
+                }
+            }
+            else = {
+                linked_list_next_node = {
+                    NODE = bf_vm_memory_cursor
+                    EFFECT = {
+                        save_global_event_target_as = bf_vm_memory_cursor
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Move the memory cursor left, extending the tape at its head
+planet_event = {
+    id = bfvm.15
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            if = {
+                limit = {
+                    is_same_value = event_target:bf_vm_memory_head
+                }
+
+                linked_list_extend_before = {
+                    NODE = bf_vm_memory_cursor
+                    NULL = bf_vm_null
+                }
+
+                event_target:bf_vm_memory_cursor = {
+                    save_global_event_target_as = bf_vm_memory_head
+                }
+            }
+            else = {
+                linked_list_prev_node = {
+                    NODE = bf_vm_memory_cursor
+                    EFFECT = {
+                        save_global_event_target_as = bf_vm_memory_cursor
+                    }
+                }
             }
         }
     }

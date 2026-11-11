@@ -1,5 +1,246 @@
 # BrainFuck Machine
 #
 # VM Mainloop
+#
+# All loop events must be triggered on the scope of the VM itself.
+# The code tape stores ASCII opcodes in bf_ll_value and ends at bf_vm_null.
 
 namespace = bfvm
+
+# Start execution at the code tape's head
+planet_event = {
+    id = bfvm.20
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_code_head = {
+            save_global_event_target_as = bf_vm_code_cursor
+        }
+
+        event_target:bf_vm_code_cursor = {
+            if = {
+                limit = {
+                    NOT = {
+                        is_same_value = event_target:bf_vm_null
+                    }
+                }
+
+                event_target:bf_vm = {
+                    planet_event = {
+                        id = bfvm.21
+                        days = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Execute one instruction, then schedule the next instruction
+planet_event = {
+    id = bfvm.21
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_code_cursor = {
+            switch = {
+                trigger = var:bf_ll_value
+
+                62 = { # >
+                    event_target:bf_vm = {
+                        planet_event = { id = bfvm.14 }
+                    }
+                }
+                60 = { # <
+                    event_target:bf_vm = {
+                        planet_event = { id = bfvm.15 }
+                    }
+                }
+                43 = { # +
+                    event_target:bf_vm = {
+                        planet_event = { id = bfvm.11 }
+                    }
+                }
+                45 = { # -
+                    event_target:bf_vm = {
+                        planet_event = { id = bfvm.12 }
+                    }
+                }
+                46 = { # .
+                    event_target:bf_vm = {
+                        planet_event = { id = bfvm.10 }
+                    }
+                }
+                91 = { # [
+                    event_target:bf_vm_memory_cursor = {
+                        if = {
+                            limit = {
+                                check_variable = {
+                                    which = bf_ll_value
+                                    value = 0
+                                }
+                            }
+
+                            event_target:bf_vm = {
+                                set_variable = {
+                                    which = bf_vm_scan_depth
+                                    value = 1
+                                }
+
+                                # PDX limits while loops to 300 iterations.
+                                while = {
+                                    trigger = {
+                                        check_variable = {
+                                            which = bf_vm_scan_depth
+                                            value > 0
+                                        }
+                                    }
+
+                                    linked_list_next_node = {
+                                        NODE = bf_vm_code_cursor
+                                        EFFECT = {
+                                            save_global_event_target_as = bf_vm_code_cursor
+                                        }
+                                    }
+
+                                    event_target:bf_vm_code_cursor = {
+                                        if = {
+                                            limit = {
+                                                check_variable = {
+                                                    which = bf_ll_value
+                                                    value = 91 # [
+                                                }
+                                            }
+
+                                            event_target:bf_vm = {
+                                                add_variable = {
+                                                    which = bf_vm_scan_depth
+                                                    value = 1
+                                                }
+                                            }
+                                        }
+
+                                        if = {
+                                            limit = {
+                                                check_variable = {
+                                                    which = bf_ll_value
+                                                    value = 93 # ]
+                                                }
+                                            }
+
+                                            event_target:bf_vm = {
+                                                subtract_variable = {
+                                                    which = bf_vm_scan_depth
+                                                    value = 1
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                93 = { # ]
+                    event_target:bf_vm_memory_cursor = {
+                        if = {
+                            limit = {
+                                check_variable = {
+                                    which = bf_ll_value
+                                    value > 0
+                                }
+                            }
+
+                            event_target:bf_vm = {
+                                set_variable = {
+                                    which = bf_vm_scan_depth
+                                    value = 1
+                                }
+
+                                # PDX limits while loops to 300 iterations.
+                                while = {
+                                    trigger = {
+                                        check_variable = {
+                                            which = bf_vm_scan_depth
+                                            value > 0
+                                        }
+                                    }
+
+                                    linked_list_prev_node = {
+                                        NODE = bf_vm_code_cursor
+                                        EFFECT = {
+                                            save_global_event_target_as = bf_vm_code_cursor
+                                        }
+                                    }
+
+                                    event_target:bf_vm_code_cursor = {
+                                        if = {
+                                            limit = {
+                                                check_variable = {
+                                                    which = bf_ll_value
+                                                    value = 93 # ]
+                                                }
+                                            }
+
+                                            event_target:bf_vm = {
+                                                add_variable = {
+                                                    which = bf_vm_scan_depth
+                                                    value = 1
+                                                }
+                                            }
+                                        }
+
+                                        if = {
+                                            limit = {
+                                                check_variable = {
+                                                    which = bf_ll_value
+                                                    value = 91 # [
+                                                }
+                                            }
+
+                                            event_target:bf_vm = {
+                                                subtract_variable = {
+                                                    which = bf_vm_scan_depth
+                                                    value = 1
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        # Taken bracket scans stop on their match, so always advance once.
+        linked_list_next_node = {
+            NODE = bf_vm_code_cursor
+            EFFECT = {
+                save_global_event_target_as = bf_vm_code_cursor
+            }
+        }
+
+        event_target:bf_vm_code_cursor = {
+            if = {
+                limit = {
+                    NOT = {
+                        is_same_value = event_target:bf_vm_null
+                    }
+                }
+
+                event_target:bf_vm = {
+                    planet_event = {
+                        id = bfvm.21
+                        days = 1
+                    }
+                }
+            }
+        }
+    }
+}

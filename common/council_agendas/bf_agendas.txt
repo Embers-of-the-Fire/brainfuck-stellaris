@@ -1,0 +1,31 @@
+# BrainFuck Machine
+#
+# Main entrypoint.
+
+agenda_bf_entry = {
+    agenda_cost = 0
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        country_event = {
+            id = bfvm.1 # Machine init
+        }
+    }
+}
+
+agenda_bf_run = {
+    agenda_cost = 0
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        event_target:bf_vm = {
+            planet_event = {
+                id = bfvm.20 # Start execution
+            }
+        }
+    }
+}

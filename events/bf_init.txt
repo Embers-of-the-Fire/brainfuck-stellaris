@@ -43,9 +43,9 @@ planet_event = {
             save_event_target_as = t_bf_vm_cursor
         }
 
-        # Then we initialize 32 nodes
+        # Then we initialize 31 additional nodes, for 32 cells total
         while = {
-            count = 32
+            count = 31
 
             linked_list_extend_after = {
                 NODE = t_bf_vm_cursor
@@ -55,6 +55,9 @@ planet_event = {
 
         event_target:t_bf_vm_cursor = {
             save_global_event_target_as = bf_vm_memory_tail
+        }
+
+        event_target:bf_vm_memory_head = {
             save_global_event_target_as = bf_vm_memory_cursor
         }
     }

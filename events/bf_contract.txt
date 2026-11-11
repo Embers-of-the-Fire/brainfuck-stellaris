@@ -8,9 +8,14 @@
 # - bf_vm_memory_head: The VM memory head. This is a global target.
 # - bf_vm_memory_tail: The VM memory tail. This is a global target.
 # - bf_vm_memory_cursor: The VM memory cursor. This is a global target.
+# - bf_vm_code_head: The VM code tape head. This is a global target.
+# - bf_vm_code_tail: The VM code tape tail. This is a global target.
+# - bf_vm_code_cursor: The VM instruction pointer. This is a global target.
 #
 # All t_bf are temporary targets and is not designed to be global.
 #
-# The node value is registered as bf_ll_value
+# The node value is registered as bf_ll_value. Code nodes store ASCII opcodes.
+# Both tapes are doubly linked through bf_ll_prev and bf_ll_next, using
+# bf_vm_null as their sentinel. bf_vm_scan_depth is the VM's bracket scan depth.
 
 namespace = bfvm
