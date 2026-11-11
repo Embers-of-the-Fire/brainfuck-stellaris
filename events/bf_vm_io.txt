@@ -1,0 +1,408 @@
+# BrainFuck Machine
+#
+# The VM IO
+#
+# All IO events must be triggered on the scope of the VM itself.
+
+namespace = bfvm
+
+# Print the ascii representation of the value at the cursor.
+planet_event = {
+    id = bfvm.10
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            switch = {
+                trigger = var:bf_ll_value
+
+                9 = {
+                    log = "9    (\\t)"
+                }
+                10 = {
+                    log = "10   (\\n)"
+                }
+                11 = {
+                    log = "11   (\\x0b)"
+                }
+                12 = {
+                    log = "12   (\\x0c)"
+                }
+                13 = {
+                    log = "13   (\\r)"
+                }
+                32 = {
+                    log = "32   (space)"
+                }
+                33 = {
+                    log = "33   (!)"
+                }
+                34 = {
+                    log = "34   (")"
+                }
+                35 = {
+                    log = "35   (#)"
+                }
+                36 = {
+                    log = "36   ($)"
+                }
+                37 = {
+                    log = "37   (%)"
+                }
+                38 = {
+                    log = "38   (&)"
+                }
+                39 = {
+                    log = "39   (')"
+                }
+                40 = {
+                    log = "40   (()"
+                }
+                41 = {
+                    log = "41   ())"
+                }
+                42 = {
+                    log = "42   (*)"
+                }
+                43 = {
+                    log = "43   (+)"
+                }
+                44 = {
+                    log = "44   (,)"
+                }
+                45 = {
+                    log = "45   (-)"
+                }
+                46 = {
+                    log = "46   (.)"
+                }
+                47 = {
+                    log = "47   (/)"
+                }
+                48 = {
+                    log = "48   (0)"
+                }
+                49 = {
+                    log = "49   (1)"
+                }
+                50 = {
+                    log = "50   (2)"
+                }
+                51 = {
+                    log = "51   (3)"
+                }
+                52 = {
+                    log = "52   (4)"
+                }
+                53 = {
+                    log = "53   (5)"
+                }
+                54 = {
+                    log = "54   (6)"
+                }
+                55 = {
+                    log = "55   (7)"
+                }
+                56 = {
+                    log = "56   (8)"
+                }
+                57 = {
+                    log = "57   (9)"
+                }
+                58 = {
+                    log = "58   (:)"
+                }
+                59 = {
+                    log = "59   (;)"
+                }
+                60 = {
+                    log = "60   (<)"
+                }
+                61 = {
+                    log = "61   (=)"
+                }
+                62 = {
+                    log = "62   (>)"
+                }
+                63 = {
+                    log = "63   (?)"
+                }
+                64 = {
+                    log = "64   (@)"
+                }
+                65 = {
+                    log = "65   (A)"
+                }
+                66 = {
+                    log = "66   (B)"
+                }
+                67 = {
+                    log = "67   (C)"
+                }
+                68 = {
+                    log = "68   (D)"
+                }
+                69 = {
+                    log = "69   (E)"
+                }
+                70 = {
+                    log = "70   (F)"
+                }
+                71 = {
+                    log = "71   (G)"
+                }
+                72 = {
+                    log = "72   (H)"
+                }
+                73 = {
+                    log = "73   (I)"
+                }
+                74 = {
+                    log = "74   (J)"
+                }
+                75 = {
+                    log = "75   (K)"
+                }
+                76 = {
+                    log = "76   (L)"
+                }
+                77 = {
+                    log = "77   (M)"
+                }
+                78 = {
+                    log = "78   (N)"
+                }
+                79 = {
+                    log = "79   (O)"
+                }
+                80 = {
+                    log = "80   (P)"
+                }
+                81 = {
+                    log = "81   (Q)"
+                }
+                82 = {
+                    log = "82   (R)"
+                }
+                83 = {
+                    log = "83   (S)"
+                }
+                84 = {
+                    log = "84   (T)"
+                }
+                85 = {
+                    log = "85   (U)"
+                }
+                86 = {
+                    log = "86   (V)"
+                }
+                87 = {
+                    log = "87   (W)"
+                }
+                88 = {
+                    log = "88   (X)"
+                }
+                89 = {
+                    log = "89   (Y)"
+                }
+                90 = {
+                    log = "90   (Z)"
+                }
+                91 = {
+                    log = "91   ([)"
+                }
+                92 = {
+                    log = "92   (\)"
+                }
+                93 = {
+                    log = "93   (])"
+                }
+                94 = {
+                    log = "94   (^)"
+                }
+                95 = {
+                    log = "95   (_)"
+                }
+                96 = {
+                    log = "96   (`)"
+                }
+                97 = {
+                    log = "97   (a)"
+                }
+                98 = {
+                    log = "98   (b)"
+                }
+                99 = {
+                    log = "99   (c)"
+                }
+                100 = {
+                    log = "100  (d)"
+                }
+                101 = {
+                    log = "101  (e)"
+                }
+                102 = {
+                    log = "102  (f)"
+                }
+                103 = {
+                    log = "103  (g)"
+                }
+                104 = {
+                    log = "104  (h)"
+                }
+                105 = {
+                    log = "105  (i)"
+                }
+                106 = {
+                    log = "106  (j)"
+                }
+                107 = {
+                    log = "107  (k)"
+                }
+                108 = {
+                    log = "108  (l)"
+                }
+                109 = {
+                    log = "109  (m)"
+                }
+                110 = {
+                    log = "110  (n)"
+                }
+                111 = {
+                    log = "111  (o)"
+                }
+                112 = {
+                    log = "112  (p)"
+                }
+                113 = {
+                    log = "113  (q)"
+                }
+                114 = {
+                    log = "114  (r)"
+                }
+                115 = {
+                    log = "115  (s)"
+                }
+                116 = {
+                    log = "116  (t)"
+                }
+                117 = {
+                    log = "117  (u)"
+                }
+                118 = {
+                    log = "118  (v)"
+                }
+                119 = {
+                    log = "119  (w)"
+                }
+                120 = {
+                    log = "120  (x)"
+                }
+                121 = {
+                    log = "121  (y)"
+                }
+                122 = {
+                    log = "122  (z)"
+                }
+                123 = {
+                    log = "123  ({)"
+                }
+                124 = {
+                    log = "124  (|)"
+                }
+                125 = {
+                    log = "125  (})"
+                }
+                126 = {
+                    log = "126  (~)"
+                }
+
+                default = {
+                    log = "!Control Character!"
+                }
+            }
+        }
+    }
+}
+
+# Add one to the cursor's pointing node
+planet_event = {
+    id = bfvm.11
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            add_variable = {
+                which = bf_ll_value
+                value = 1
+            }
+
+            if {
+                limit = {
+                    check_variable = {
+                        which = bf_ll_value
+                        value > 255
+                    }
+                }
+
+                subtract_variable = {
+                    which = bf_ll_value
+                    value = 256
+                }
+            }
+        }
+    }
+}
+
+# Subtract one to the cursor's pointing node
+planet_event = {
+    id = bfvm.12
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            subtract_variable = {
+                which = bf_ll_value
+                value = 1
+            }
+
+            if {
+                limit = {
+                    check_variable = {
+                        which = bf_ll_value
+                        value < 0
+                    }
+                }
+
+                add_variable = {
+                    which = bf_ll_value
+                    value = 256
+                }
+            }
+        }
+    }
+}
+
+# Set the node to zero
+planet_event = {
+    id = bfvm.12
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_memory_cursor = {
+            set_variable = {
+                which = bf_ll_value
+                value = 0
+            }
+        }
+    }
+}
+

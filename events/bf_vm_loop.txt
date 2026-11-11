@@ -1,0 +1,5 @@
+# BrainFuck Machine
+#
+# VM Mainloop
+
+namespace = bfvm

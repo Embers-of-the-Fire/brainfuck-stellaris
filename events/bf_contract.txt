@@ -1,0 +1,16 @@
+# BrainFuck machine
+#
+# Alias Contracts
+#
+# - bf_vm_root: The VM planet's owner. This is a global target.
+# - bf_vm: The VM planet. This is a global target.
+# - bf_vm_null: The VM "null" sentinel. This is a global target.
+# - bf_vm_memory_head: The VM memory head. This is a global target.
+# - bf_vm_memory_tail: The VM memory tail. This is a global target.
+# - bf_vm_memory_cursor: The VM memory cursor. This is a global target.
+#
+# All t_bf are temporary targets and is not designed to be global.
+#
+# The node value is registered as bf_ll_value
+
+namespace = bfvm

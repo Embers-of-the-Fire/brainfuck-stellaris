@@ -1,0 +1,62 @@
+# BrainFuck Machine
+#
+# Machine initialization
+
+namespace = bfvm
+
+# Setup vm reference
+country_event = {
+    id = bfvm.1
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        capital_scope = {
+            save_global_event_target_as = bf_vm
+
+            create_node = { OWNER = ROOT }
+
+            last_created_army = {
+                save_global_event_target_as = bf_vm_null
+            }
+        }
+    }
+}
+
+# Setup memory
+planet_event = {
+    id = bfvm.2
+
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        event_target:bf_vm_null@this = {
+            save_event_target_as = bf_vm_null
+        }
+
+        # First we need to create the memory
+        create_node = yes
+        last_created_army = {
+            save_global_event_target_as = bf_vm_memory_head
+            save_event_target_as = t_bf_vm_cursor
+        }
+
+        # Then we initialize 32 nodes
+        while = {
+            count = 32
+
+            linked_list_extend_after = {
+                NODE = t_bf_vm_cursor
+                NULL = bf_vm_null
+            }
+        }
+
+        event_target:t_bf_vm_cursor = {
+            save_global_event_target_as = bf_vm_memory_tail
+            save_global_event_target_as = bf_vm_memory_cursor
+        }
+    }
+}
+

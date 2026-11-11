@@ -1,0 +1,100 @@
+# BrainFuck Machine
+#
+# Utilities.
+
+# Expected:
+# - $OWNER$: VM country
+create_node = {
+    create_army = {
+        name = "node"
+        owner = event_target:bf_vm_root
+        species = random
+        type = bf_node_army
+    }
+
+    last_created_army = {
+        set_variable = {
+            which = bf_ll_value
+            value = 0
+        }
+    }
+}
+
+# Expected:
+# - $OWNER$: VM country
+# - event_target:$NODE$: The linked list node.
+# - event_target:$NULL$: The VM null.
+# Note that the provided event_target name will be overwritten to point
+# to the new created node.
+linked_list_extend_before = {
+    create_node = { OWNER = $OWNER$ }
+
+    event_target:$NODE$ = {
+        last_created_army = {
+            # Save as cursor
+            save_global_event_target_as = $NODE$
+
+            event_target:$NULL$ = {
+                # Set NULL as the node's prev
+                save_global_event_target_as = bf_ll_prev@prev
+            }
+
+            # Save the previous cursor's prev as the last created node.
+            save_global_event_target_as = bf_ll_prev@prev
+        }
+
+        # Save previous cursor as the node's next
+        save_global_event_target_as = bf_ll_next@last_created_army
+    }
+}
+
+# Expected:
+# - $OWNER$: VM country
+# - event_target:$NODE$: The linked list node.
+# - event_target:$NULL$: The VM null.
+# Note that the provided event_target name will be overwritten to point
+# to the new created node.
+linked_list_extend_after = {
+    create_node = yes
+
+    event_target:$NODE$ = {
+        last_created_army = {
+            # Save as cursor
+            save_global_event_target_as = $NODE$
+
+            event_target:$NULL$ = {
+                # Set NULL as the node's next
+                save_global_event_target_as = bf_ll_next@prev
+            }
+
+            # Save the previous cursor's next as the last created node.
+            save_global_event_target_as = bf_ll_next@prev
+        }
+
+        # Save previous cursor as the node's prev
+        save_global_event_target_as = bf_ll_prev@last_created_army
+    }
+}
+
+# Expected:
+# - event_target:$NODE$: The cursor.
+# - $EFFECT$: Effect block.
+linked_list_next_node = {
+    event_target:$NODE$ = {
+        event_target:bf_ll_next@this = {
+            $EFFECT$
+        }
+    }
+}
+
+# Expected:
+# - event_target:$NODE$: The cursor.
+# - $EFFECT$: Effect block.
+linked_list_prev_node = {
+    event_target:$NODE$ = {
+        event_target:bf_ll_prev@this = {
+            $EFFECT$
+        }
+    }
+}
+

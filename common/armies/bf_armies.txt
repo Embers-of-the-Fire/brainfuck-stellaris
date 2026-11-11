@@ -1,0 +1,16 @@
+# BrainFuck Machine
+#
+# Define the node of the tape linked list.
+
+bf_node_army = {
+    defensive = yes
+    damage = 1.0
+    health = 1.0
+    morale = 1.0
+
+    icon = GFX_army_type_primitive
+
+    potential_country = {
+        always = no
+    }
+}
