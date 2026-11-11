@@ -46,7 +46,7 @@ def translate(source: str) -> str:
 """
 
     lines = [
-        "create_node = { OWNER = ROOT }",
+        "create_node = yes",
         "last_created_army = {",
         "    set_variable = {",
         "        which = bf_ll_value",

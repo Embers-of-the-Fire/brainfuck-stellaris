@@ -12,13 +12,19 @@ country_event = {
     is_triggered_only = yes
 
     immediate = {
+        save_global_event_target_as = bf_vm_root
+
         capital_scope = {
-            save_global_event_target_as = bf_vm
+            planet = {
+                save_global_event_target_as = bf_vm
 
-            create_node = { OWNER = ROOT }
+                create_node = yes
 
-            last_created_army = {
-                save_global_event_target_as = bf_vm_null
+                last_created_army = {
+                    save_global_event_target_as = bf_vm_null
+                }
+
+                planet_event = { id = bfvm.2 }
             }
         }
     }
@@ -32,10 +38,6 @@ planet_event = {
     is_triggered_only = yes
 
     immediate = {
-        event_target:bf_vm_null@this = {
-            save_event_target_as = bf_vm_null
-        }
-
         # First we need to create the memory
         create_node = yes
         last_created_army = {

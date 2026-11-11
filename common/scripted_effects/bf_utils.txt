@@ -2,14 +2,14 @@
 #
 # Utilities.
 
-# Expected:
-# - $OWNER$: VM country
 create_node = {
-    create_army = {
-        name = "node"
-        owner = event_target:bf_vm_root
-        species = random
-        type = bf_node_army
+    event_target:bf_vm = {
+        create_army = {
+            name = "node"
+            owner = event_target:bf_vm_root
+            species = random
+            type = bf_node_army
+        }
     }
 
     last_created_army = {
@@ -21,13 +21,12 @@ create_node = {
 }
 
 # Expected:
-# - $OWNER$: VM country
 # - event_target:$NODE$: The linked list node.
 # - event_target:$NULL$: The VM null.
 # Note that the provided event_target name will be overwritten to point
 # to the new created node.
 linked_list_extend_before = {
-    create_node = { OWNER = $OWNER$ }
+    create_node = yes
 
     event_target:$NODE$ = {
         last_created_army = {
@@ -49,7 +48,6 @@ linked_list_extend_before = {
 }
 
 # Expected:
-# - $OWNER$: VM country
 # - event_target:$NODE$: The linked list node.
 # - event_target:$NULL$: The VM null.
 # Note that the provided event_target name will be overwritten to point

@@ -4,6 +4,9 @@
 
 agenda_bf_entry = {
     agenda_cost = 0
+    potential = {
+        always = yes
+    }
     allow = {
         always = yes
     }
@@ -17,6 +20,9 @@ agenda_bf_entry = {
 
 agenda_bf_run = {
     agenda_cost = 0
+    potential = {
+        always = yes
+    }
     allow = {
         always = yes
     }

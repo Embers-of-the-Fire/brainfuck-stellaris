@@ -15,313 +15,408 @@ planet_event = {
 
     immediate = {
         event_target:bf_vm_memory_cursor = {
-            switch = {
-                trigger = var:bf_ll_value
-
-                9 = {
-                    log = "9    (\\t)"
-                }
-                10 = {
-                    log = "10   (\\n)"
-                }
-                11 = {
-                    log = "11   (\\x0b)"
-                }
-                12 = {
-                    log = "12   (\\x0c)"
-                }
-                13 = {
-                    log = "13   (\\r)"
-                }
-                32 = {
-                    log = "32   (space)"
-                }
-                33 = {
-                    log = "33   (!)"
-                }
-                34 = {
-                    log = "34   (")"
-                }
-                35 = {
-                    log = "35   (#)"
-                }
-                36 = {
-                    log = "36   ($)"
-                }
-                37 = {
-                    log = "37   (%)"
-                }
-                38 = {
-                    log = "38   (&)"
-                }
-                39 = {
-                    log = "39   (')"
-                }
-                40 = {
-                    log = "40   (()"
-                }
-                41 = {
-                    log = "41   ())"
-                }
-                42 = {
-                    log = "42   (*)"
-                }
-                43 = {
-                    log = "43   (+)"
-                }
-                44 = {
-                    log = "44   (,)"
-                }
-                45 = {
-                    log = "45   (-)"
-                }
-                46 = {
-                    log = "46   (.)"
-                }
-                47 = {
-                    log = "47   (/)"
-                }
-                48 = {
-                    log = "48   (0)"
-                }
-                49 = {
-                    log = "49   (1)"
-                }
-                50 = {
-                    log = "50   (2)"
-                }
-                51 = {
-                    log = "51   (3)"
-                }
-                52 = {
-                    log = "52   (4)"
-                }
-                53 = {
-                    log = "53   (5)"
-                }
-                54 = {
-                    log = "54   (6)"
-                }
-                55 = {
-                    log = "55   (7)"
-                }
-                56 = {
-                    log = "56   (8)"
-                }
-                57 = {
-                    log = "57   (9)"
-                }
-                58 = {
-                    log = "58   (:)"
-                }
-                59 = {
-                    log = "59   (;)"
-                }
-                60 = {
-                    log = "60   (<)"
-                }
-                61 = {
-                    log = "61   (=)"
-                }
-                62 = {
-                    log = "62   (>)"
-                }
-                63 = {
-                    log = "63   (?)"
-                }
-                64 = {
-                    log = "64   (@)"
-                }
-                65 = {
-                    log = "65   (A)"
-                }
-                66 = {
-                    log = "66   (B)"
-                }
-                67 = {
-                    log = "67   (C)"
-                }
-                68 = {
-                    log = "68   (D)"
-                }
-                69 = {
-                    log = "69   (E)"
-                }
-                70 = {
-                    log = "70   (F)"
-                }
-                71 = {
-                    log = "71   (G)"
-                }
-                72 = {
-                    log = "72   (H)"
-                }
-                73 = {
-                    log = "73   (I)"
-                }
-                74 = {
-                    log = "74   (J)"
-                }
-                75 = {
-                    log = "75   (K)"
-                }
-                76 = {
-                    log = "76   (L)"
-                }
-                77 = {
-                    log = "77   (M)"
-                }
-                78 = {
-                    log = "78   (N)"
-                }
-                79 = {
-                    log = "79   (O)"
-                }
-                80 = {
-                    log = "80   (P)"
-                }
-                81 = {
-                    log = "81   (Q)"
-                }
-                82 = {
-                    log = "82   (R)"
-                }
-                83 = {
-                    log = "83   (S)"
-                }
-                84 = {
-                    log = "84   (T)"
-                }
-                85 = {
-                    log = "85   (U)"
-                }
-                86 = {
-                    log = "86   (V)"
-                }
-                87 = {
-                    log = "87   (W)"
-                }
-                88 = {
-                    log = "88   (X)"
-                }
-                89 = {
-                    log = "89   (Y)"
-                }
-                90 = {
-                    log = "90   (Z)"
-                }
-                91 = {
-                    log = "91   ([)"
-                }
-                92 = {
-                    log = "92   (\)"
-                }
-                93 = {
-                    log = "93   (])"
-                }
-                94 = {
-                    log = "94   (^)"
-                }
-                95 = {
-                    log = "95   (_)"
-                }
-                96 = {
-                    log = "96   (`)"
-                }
-                97 = {
-                    log = "97   (a)"
-                }
-                98 = {
-                    log = "98   (b)"
-                }
-                99 = {
-                    log = "99   (c)"
-                }
-                100 = {
-                    log = "100  (d)"
-                }
-                101 = {
-                    log = "101  (e)"
-                }
-                102 = {
-                    log = "102  (f)"
-                }
-                103 = {
-                    log = "103  (g)"
-                }
-                104 = {
-                    log = "104  (h)"
-                }
-                105 = {
-                    log = "105  (i)"
-                }
-                106 = {
-                    log = "106  (j)"
-                }
-                107 = {
-                    log = "107  (k)"
-                }
-                108 = {
-                    log = "108  (l)"
-                }
-                109 = {
-                    log = "109  (m)"
-                }
-                110 = {
-                    log = "110  (n)"
-                }
-                111 = {
-                    log = "111  (o)"
-                }
-                112 = {
-                    log = "112  (p)"
-                }
-                113 = {
-                    log = "113  (q)"
-                }
-                114 = {
-                    log = "114  (r)"
-                }
-                115 = {
-                    log = "115  (s)"
-                }
-                116 = {
-                    log = "116  (t)"
-                }
-                117 = {
-                    log = "117  (u)"
-                }
-                118 = {
-                    log = "118  (v)"
-                }
-                119 = {
-                    log = "119  (w)"
-                }
-                120 = {
-                    log = "120  (x)"
-                }
-                121 = {
-                    log = "121  (y)"
-                }
-                122 = {
-                    log = "122  (z)"
-                }
-                123 = {
-                    log = "123  ({)"
-                }
-                124 = {
-                    log = "124  (|)"
-                }
-                125 = {
-                    log = "125  (})"
-                }
-                126 = {
-                    log = "126  (~)"
-                }
-
-                default = {
-                    log = "!Control Character!"
-                }
+            if = {
+                limit = { check_variable = { which = bf_ll_value value = 9 } }
+                log = "9    (\\t)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 10 } }
+                log = "10   (\\n)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 11 } }
+                log = "11   (\\x0b)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 12 } }
+                log = "12   (\\x0c)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 13 } }
+                log = "13   (\\r)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 32 } }
+                log = "32   (space)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 33 } }
+                log = "33   (!)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 34 } }
+                log = "34   (\")"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 35 } }
+                log = "35   (#)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 36 } }
+                log = "36   ($)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 37 } }
+                log = "37   (%)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 38 } }
+                log = "38   (&)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 39 } }
+                log = "39   (')"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 40 } }
+                log = "40   (()"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 41 } }
+                log = "41   ())"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 42 } }
+                log = "42   (*)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 43 } }
+                log = "43   (+)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 44 } }
+                log = "44   (,)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 45 } }
+                log = "45   (-)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 46 } }
+                log = "46   (.)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 47 } }
+                log = "47   (/)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 48 } }
+                log = "48   (0)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 49 } }
+                log = "49   (1)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 50 } }
+                log = "50   (2)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 51 } }
+                log = "51   (3)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 52 } }
+                log = "52   (4)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 53 } }
+                log = "53   (5)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 54 } }
+                log = "54   (6)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 55 } }
+                log = "55   (7)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 56 } }
+                log = "56   (8)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 57 } }
+                log = "57   (9)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 58 } }
+                log = "58   (:)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 59 } }
+                log = "59   (;)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 60 } }
+                log = "60   (<)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 61 } }
+                log = "61   (=)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 62 } }
+                log = "62   (>)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 63 } }
+                log = "63   (?)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 64 } }
+                log = "64   (@)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 65 } }
+                log = "65   (A)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 66 } }
+                log = "66   (B)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 67 } }
+                log = "67   (C)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 68 } }
+                log = "68   (D)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 69 } }
+                log = "69   (E)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 70 } }
+                log = "70   (F)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 71 } }
+                log = "71   (G)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 72 } }
+                log = "72   (H)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 73 } }
+                log = "73   (I)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 74 } }
+                log = "74   (J)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 75 } }
+                log = "75   (K)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 76 } }
+                log = "76   (L)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 77 } }
+                log = "77   (M)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 78 } }
+                log = "78   (N)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 79 } }
+                log = "79   (O)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 80 } }
+                log = "80   (P)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 81 } }
+                log = "81   (Q)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 82 } }
+                log = "82   (R)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 83 } }
+                log = "83   (S)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 84 } }
+                log = "84   (T)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 85 } }
+                log = "85   (U)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 86 } }
+                log = "86   (V)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 87 } }
+                log = "87   (W)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 88 } }
+                log = "88   (X)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 89 } }
+                log = "89   (Y)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 90 } }
+                log = "90   (Z)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 91 } }
+                log = "91   ([)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 92 } }
+                log = "92   (\\)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 93 } }
+                log = "93   (])"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 94 } }
+                log = "94   (^)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 95 } }
+                log = "95   (_)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 96 } }
+                log = "96   (`)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 97 } }
+                log = "97   (a)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 98 } }
+                log = "98   (b)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 99 } }
+                log = "99   (c)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 100 } }
+                log = "100  (d)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 101 } }
+                log = "101  (e)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 102 } }
+                log = "102  (f)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 103 } }
+                log = "103  (g)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 104 } }
+                log = "104  (h)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 105 } }
+                log = "105  (i)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 106 } }
+                log = "106  (j)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 107 } }
+                log = "107  (k)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 108 } }
+                log = "108  (l)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 109 } }
+                log = "109  (m)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 110 } }
+                log = "110  (n)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 111 } }
+                log = "111  (o)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 112 } }
+                log = "112  (p)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 113 } }
+                log = "113  (q)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 114 } }
+                log = "114  (r)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 115 } }
+                log = "115  (s)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 116 } }
+                log = "116  (t)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 117 } }
+                log = "117  (u)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 118 } }
+                log = "118  (v)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 119 } }
+                log = "119  (w)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 120 } }
+                log = "120  (x)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 121 } }
+                log = "121  (y)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 122 } }
+                log = "122  (z)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 123 } }
+                log = "123  ({)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 124 } }
+                log = "124  (|)"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 125 } }
+                log = "125  (})"
+            }
+            else_if = {
+                limit = { check_variable = { which = bf_ll_value value = 126 } }
+                log = "126  (~)"
+            }
+            else = {
+                log = "!Control Character!"
             }
         }
     }
@@ -341,7 +436,7 @@ planet_event = {
                 value = 1
             }
 
-            if {
+            if = {
                 limit = {
                     check_variable = {
                         which = bf_ll_value
@@ -372,7 +467,7 @@ planet_event = {
                 value = 1
             }
 
-            if {
+            if = {
                 limit = {
                     check_variable = {
                         which = bf_ll_value
@@ -430,11 +525,8 @@ planet_event = {
                 }
             }
             else = {
-                linked_list_next_node = {
-                    NODE = bf_vm_memory_cursor
-                    EFFECT = {
-                        save_global_event_target_as = bf_vm_memory_cursor
-                    }
+                event_target:bf_ll_next@this = {
+                    save_global_event_target_as = bf_vm_memory_cursor
                 }
             }
         }
@@ -465,14 +557,10 @@ planet_event = {
                 }
             }
             else = {
-                linked_list_prev_node = {
-                    NODE = bf_vm_memory_cursor
-                    EFFECT = {
-                        save_global_event_target_as = bf_vm_memory_cursor
-                    }
+                event_target:bf_ll_prev@this = {
+                    save_global_event_target_as = bf_vm_memory_cursor
                 }
             }
         }
     }
 }
-
