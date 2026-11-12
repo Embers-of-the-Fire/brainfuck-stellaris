@@ -1,0 +1,1106 @@
+create_node = yes
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+    save_global_event_target_as = bf_vm_code_head
+    save_global_event_target_as = bf_vm_code_construct_cursor
+    event_target:bf_vm_null = {
+        save_global_event_target_as = bf_ll_prev@last_created_army
+        save_global_event_target_as = bf_ll_next@last_created_army
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 91 # [
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 93 # ]
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 60 # <
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 45 # -
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 43 # +
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 46 # .
+    }
+}
+linked_list_extend_after = {
+    NODE = bf_vm_code_construct_cursor
+    NULL = bf_vm_null
+}
+last_created_army = {
+    set_variable = {
+        which = bf_ll_value
+        value = 62 # >
+    }
+}
+event_target:bf_vm_code_construct_cursor = {
+    save_global_event_target_as = bf_vm_code_tail
+}

@@ -42,7 +42,7 @@ planet_event = {
         create_node = yes
         last_created_army = {
             save_global_event_target_as = bf_vm_memory_head
-            save_event_target_as = t_bf_vm_cursor
+            save_global_event_target_as = bf_vm_memory_construct_cursor
         }
 
         # Then we initialize 31 additional nodes, for 32 cells total
@@ -50,12 +50,12 @@ planet_event = {
             count = 31
 
             linked_list_extend_after = {
-                NODE = t_bf_vm_cursor
+                NODE = bf_vm_memory_construct_cursor
                 NULL = bf_vm_null
             }
         }
 
-        event_target:t_bf_vm_cursor = {
+        event_target:bf_vm_memory_construct_cursor = {
             save_global_event_target_as = bf_vm_memory_tail
         }
 

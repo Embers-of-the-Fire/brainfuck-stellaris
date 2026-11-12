@@ -18,6 +18,23 @@ agenda_bf_entry = {
     }
 }
 
+agenda_bf_codeinit = {
+    agenda_cost = 0
+    potential = {
+        always = yes
+    }
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        country_event = {
+            id = bfvm.1000
+        }
+    }
+}
+
+
 agenda_bf_run = {
     agenda_cost = 0
     potential = {

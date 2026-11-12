@@ -11,6 +11,8 @@
 # - bf_vm_code_head: The VM code tape head. This is a global target.
 # - bf_vm_code_tail: The VM code tape tail. This is a global target.
 # - bf_vm_code_cursor: The VM instruction pointer. This is a global target.
+# - bf_vm_code_construct_cursor: The code tape construction cursor. Global.
+# - bf_vm_memory_construct_cursor: The memory construction cursor. Global.
 #
 # All t_bf are temporary targets and is not designed to be global.
 #

@@ -53,7 +53,7 @@ def translate(source: str) -> str:
         f"        value = {ord(instructions[0])} # {instructions[0]}",
         "    }",
         "    save_global_event_target_as = bf_vm_code_head",
-        "    save_event_target_as = t_bf_vm_code_cursor",
+        "    save_global_event_target_as = bf_vm_code_construct_cursor",
         "    event_target:bf_vm_null = {",
         "        save_global_event_target_as = bf_ll_prev@last_created_army",
         "        save_global_event_target_as = bf_ll_next@last_created_army",
@@ -65,7 +65,7 @@ def translate(source: str) -> str:
         lines.extend(
             [
                 "linked_list_extend_after = {",
-                "    NODE = t_bf_vm_code_cursor",
+                "    NODE = bf_vm_code_construct_cursor",
                 "    NULL = bf_vm_null",
                 "}",
                 "last_created_army = {",
@@ -79,7 +79,7 @@ def translate(source: str) -> str:
 
     lines.extend(
         [
-            "event_target:t_bf_vm_code_cursor = {",
+            "event_target:bf_vm_code_construct_cursor = {",
             "    save_global_event_target_as = bf_vm_code_tail",
             "}",
         ]
